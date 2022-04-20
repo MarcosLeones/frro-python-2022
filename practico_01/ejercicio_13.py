@@ -56,7 +56,14 @@ def generar_pares_generator(initial: int = 0) -> Iterator[int]:
     """Re-Escribir utilizando Generadores
     Referencia: https://docs.python.org/3/howto/functional.html?highlight=generator#generators
     """
-    pass # Completar
+    numero=initial-1
+    while True:
+        if numero%2==0:
+            numero+=2
+            yield numero
+        else:
+            numero+=1
+            yield numero
 
 
 # NO MODIFICAR - INICIO
